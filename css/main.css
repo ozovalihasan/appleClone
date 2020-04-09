@@ -148,7 +148,7 @@ nav > * {
 }
 
 .fa-search {
-  color: var(--black-color);
+  color: var(--white-color);
   align-self: center;
   padding-left: 15px;
   margin-right: -18px;
@@ -157,10 +157,11 @@ nav > * {
 
 input {
   overflow: hidden;
-  border: solid var(--black-color) 1px;
+  border: solid #555 1px;
   border-radius: 15px;
   padding: 0 0 0 18px;
-  background-color: transparent;
+  background-color: var(--white-color);
+  opacity: 0.1;
   width: 100px;
   height: 19px;
 }
@@ -173,17 +174,20 @@ input:not(focus) {
 
 @keyframes search-close {
   0% {
-    background-color: var(--white-color);
+    background-color: #999;
     width: 150px;
+    opacity: 1;
   }
 
   100% {
-    background-color: transparent;
+    background-color: var(--white-color);
+    opacity: 0.1;
     width: 100px;
   }
 }
 
 input:focus {
+  outline: none;
   animation: search-open;
   animation-duration: 0.3s;
   animation-fill-mode: forwards;
@@ -191,13 +195,15 @@ input:focus {
 
 @keyframes search-open {
   0% {
-    background-color: transparent;
+    background-color: var(--white-color);
     width: 100px;
+    opacity: 0.1;
   }
 
   100% {
-    background-color: var(--white-color);
+    background-color: #999;
     width: 150px;
+    opacity: 1;
   }
 }
 
