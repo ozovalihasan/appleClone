@@ -1,1 +1,42 @@
-# appleClone
+﻿# Apple Main Page Clone
+
+> [Apple](https://web.archive.org/web/20140301004610/http://www.apple.com/) Main Page is cloned as a project of Microverse
+
+![screenshot](./app_screenshot.png)
+
+This work is a fourth project of Microverse
+ 
+## Built With
+
+- HTML 
+- CSS
+- https://web.archive.org/web/20140301004610/http://www.apple.com/ is used as source page
+
+## Live Demo
+
+[Live Demo Link]()
+
+## Authors
+
+👤 **Hasan Özovalı**
+
+- Github: [@githubhandle](https://github.com/ozovalihasan)
+- Twitter: [@twitterhandle]	
+- Linkedin: [linkedin](https://www.linkedin.com/in/hasan-ozovali/)
+
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+Thanks to Microverse because of help to build this project
+
