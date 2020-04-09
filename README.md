@@ -14,15 +14,15 @@ This work is a fourth project of Microverse
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link]( ... )
 
 ## Authors
 
 👤 **Hasan Özovalı**
 
-- Github: [@githubhandle](https://github.com/ozovalihasan)
-- Twitter: [@twitterhandle]	
-- Linkedin: [linkedin](https://www.linkedin.com/in/hasan-ozovali/)
+- Github: [@ozovalihasan](https://github.com/ozovalihasan)
+- Twitter: [@ozovalihasan](https://twitter.com/ozovalihasan)
+- Linkedin: [Hasan Özovalı](https://www.linkedin.com/in/hasan-ozovali/)
 
 
 
