@@ -12,8 +12,10 @@ body {
   max-height: 1472px;
   min-height: 830px;
   min-width: 1024px;
-  font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial,
-    Verdana, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana,
+    sans-serif;
 }
 
 a {
@@ -45,11 +47,12 @@ nav {
   background-color: transparent;
   display: flex;
   flex-direction: row;
-  margin: 0px auto;
+  margin: 0 auto;
   align-items: flex-end;
+  width: 980px;
 }
 
-nav a {
+nav > * {
   background-color: #484848;
   border-right: solid 0.25px #706c6c;
   border-left: solid 0.25px #706c6c;
@@ -58,7 +61,6 @@ nav a {
 
 .btn-h-w {
   height: 36px;
-  width: 102px;
 }
 
 .changing-background {
@@ -70,6 +72,7 @@ nav a {
     #787878 96%,
     #575757 96%
   );
+  flex: 1;
 }
 
 .changing-background:hover {
@@ -85,14 +88,17 @@ nav a {
 
 .btn-image {
   background: url("https://web.archive.org/web/20140225073748im_/http://images.apple.com/global/nav/images/globalnav_text.svg")
-      50% 0px no-repeat,
+      50% 0 no-repeat,
     transparent;
-  border: 0px 2px;
+  border: 0 2px;
+}
+
+.apple-icon-radius {
+  border-radius: 4px 0 0 4px;
 }
 
 .apple-icon {
-  background-position-y: -0px;
-  border-radius: 5px 0px 0px 5px;
+  background-position-y: 0, 0;
 }
 
 .store-icon {
@@ -133,34 +139,68 @@ nav a {
     #575757 96%
   );
   box-sizing: border-box;
-  width: 132px;
-  border-radius: 0px 5px 5px 0px;
+  width: auto;
+  border-radius: 0 4px 4px 0;
 }
 
 .search-icon div {
   margin-top: 8px;
-  margin-left: 8px;
-  background-color: rgba(256, 256, 256, 0.1);
-  border-radius: 12px;
-  border: solid var(--black-color) 0.25px;
   display: flex;
   width: 90%;
 }
 
 .fa-search {
+  color: var(--black-color);
   align-self: center;
-  padding-left: 10px;
-  margin-right: 2px;
+  padding-left: 15px;
+  margin-right: -18px;
+  z-index: 2;
 }
 
 input {
   overflow: hidden;
-  left: -25px;
-  overflow: hidden;
-  border: none;
+  border: solid var(--black-color) 1px;
+  border-radius: 15px;
+  padding: 0 0 0 18px;
   background-color: transparent;
-  width: 100%;
+  width: 100px;
   height: 19px;
+}
+
+input:not(focus) {
+  animation: search-close;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes search-close {
+  0% {
+    background-color: var(--white-color);
+    width: 150px;
+  }
+
+  100% {
+    background-color: transparent;
+    width: 100px;
+  }
+}
+
+input:focus {
+  animation: search-open;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes search-open {
+  0% {
+    background-color: transparent;
+    width: 100px;
+  }
+
+  100% {
+    background-color: var(--white-color);
+    width: 150px;
+  }
 }
 
 .texts {
