@@ -59,7 +59,7 @@ main {
 }
 
 nav {
-  height: max(7vh,49px);
+  height: max(7vh, 49px);
   padding-top: 80px;
   padding-bottom: 10vh;
   background-color: transparent;
@@ -77,7 +77,7 @@ nav > * {
 }
 
 .btn-h {
-  height: max(7vh,49px);
+  height: max(7vh, 49px);
 }
 
 .btn-background {
@@ -113,7 +113,7 @@ nav > * {
     50% 0,
     transparent;
   border: 0 2px;
-  background-size: max(18vw,126px)  max(50vh, 350px);
+  background-size: max(18vw, 126px)  max(50vh, 350px);
 }
 
 .apple-icon-radius {
