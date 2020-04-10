@@ -35,8 +35,6 @@ body {
     sans-serif;
 }
 
-
-
 a {
   color: var(--white-color);
   text-decoration: none;
@@ -58,7 +56,6 @@ main {
   background-size: cover;
   flex-flow: column;
   margin-bottom: 2px;
-
 }
 
 nav {
@@ -252,7 +249,6 @@ input:focus {
   margin: 1px;
   background-size: cover;
   background-position: top center;
-
 }
 
 .first-product {
@@ -287,7 +283,6 @@ footer {
   grid-auto-flow: column;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-
 }
 
 .footer-container div {
