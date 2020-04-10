@@ -3,7 +3,6 @@
   --white-color: #fff;
 }
 
-
 body {
   height: 100vh;
   background-color: var(--white-color);
@@ -26,8 +25,8 @@ a {
   text-decoration: none;
 }
 
-.no-repeat-background{
-  background-repeat: no-repeat ;
+.no-repeat-background {
+  background-repeat: no-repeat;
 }
 
 .grid {
@@ -79,16 +78,15 @@ nav > * {
 
 .btn-background {
   background-image:
-  linear-gradient(
-    #858585,
-    #707070 50%,
-    #5e5e5e 50%,
-    #5e5e5e 52%,
-    #787878 96%,
-    #575757 96%
-  );
+    linear-gradient(
+      #858585,
+      #707070 50%,
+      #5e5e5e 50%,
+      #5e5e5e 52%,
+      #787878 96%,
+      #575757 96%
+    );
 }
-
 
 .changing-background {
   flex: 1;
@@ -242,7 +240,6 @@ input:focus {
   height: auto;
   background-size: cover;
   background-position: top center;
-
 }
 
 .first-product {
