@@ -3,26 +3,8 @@
   --white-color: #fff;
 }
 
-body {
-  height: 100vh;
-  background-color: var(--white-color);
-  color: var(--black-color);
-  flex-flow: column;
-  min-height: 830px;
-  min-width: 1024px;
-  font:
-    1vh/18px "Lucida Grande",
-    "Lucida Sans Unicode",
-    Helvetica,
-    Arial,
-    Verdana,
-    sans-serif;
+.margin-auto {
   margin: 0 auto;
-}
-
-a {
-  color: var(--white-color);
-  text-decoration: none;
 }
 
 .no-repeat-background {
@@ -37,22 +19,46 @@ a {
   display: flex;
 }
 
+body {
+  background-color: var(--white-color);
+  color: var(--black-color);
+  flex-flow: column;
+  height: 96vh;
+  min-height: 830px;
+  min-width: 1024px;
+  font:
+    12px/18px "Lucida Grande",
+    "Lucida Sans Unicode",
+    Helvetica,
+    Arial,
+    Verdana,
+    sans-serif;
+}
+
+
+
+a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
 main {
-  height: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 4fr 1fr;
-  grid-auto-flow: row;
-  grid-gap: 2px;
+  height: 100vh;
+  min-height: 740px;
+  flex-wrap: wrap;
 }
 
 .container {
-  grid-column: 1/5;
+  width: 100%;
+  height: 70%;
+  min-height: 540px;
   background:
     url("https://web.archive.org/web/20140228114747im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg")
     bottom center;
   background-size: cover;
   flex-flow: column;
-  height: 100%;
+  margin-bottom: 2px;
+
 }
 
 nav {
@@ -60,7 +66,6 @@ nav {
   padding-bottom: 10vh;
   background-color: transparent;
   flex-direction: row;
-  margin: 0 auto;
   align-items: flex-end;
   width: 980px;
 }
@@ -220,7 +225,6 @@ input:focus {
 
 .texts {
   flex: 3;
-  margin: 0 auto;
   grid-template-rows: 84px 100px 64px;
   grid-template-columns: 1fr;
   grid-gap: 10px;
@@ -236,10 +240,19 @@ input:focus {
   background-position-y: -32px;
 }
 
+.product-container {
+  width: 100%;
+  height: 20%;
+  min-height: 200px;
+}
+
 .products {
-  height: auto;
+  width: 100%;
+  min-height: 200px;
+  margin: 1px;
   background-size: cover;
   background-position: top center;
+
 }
 
 .first-product {
@@ -259,7 +272,8 @@ input:focus {
 }
 
 footer {
-  margin: 0 auto;
+  min-height: 90px;
+  padding-top: 1.5em;
   align-items: center;
   justify-items: center;
 }
@@ -267,18 +281,18 @@ footer {
 .footer-container {
   background-color: var(--white-color);
   color: #6e6e6e;
-  height: 6vh;
-  width: 1000px;
+  width: 100%;
   font-size: 0.8334em;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: 0 auto;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
 }
 
 .footer-container div {
-  padding-top: 1.5em;
-  height: auto;
-  margin: 0 20px;
+  height: 3vh;
+  margin: 10px 20px 0 20px;
 }
 
 .footer-container a {
