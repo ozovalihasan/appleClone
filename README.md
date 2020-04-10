@@ -14,7 +14,7 @@ This work is a fourth project of Microverse
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/ozovalihasan/appleClone/53fdd155119a372374f7b2d76d35fa9b06489f8a/index.html)
+[Live Demo Link](https://rawcdn.githack.com/ozovalihasan/appleClone/4f66229e38b9d01b7ae62804db76b58ef931a0b3/index.html)
 
 ## Authors
 
