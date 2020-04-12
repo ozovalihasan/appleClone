@@ -60,8 +60,8 @@ main {
 
 nav {
   height: max(7vh, 49px);
-  padding-top: 80px;
-  padding-bottom: 10vh;
+  padding-top: max(10vh, 80px);
+  padding-bottom: max(10vh, 80px);
   background-color: transparent;
   flex-direction: row;
   align-items: flex-end;
@@ -73,7 +73,7 @@ nav > * {
   background-color: #484848;
   border-right: solid 0.25px #706c6c;
   border-left: solid 0.25px #706c6c;
-  padding: 0 1px;
+  padding: 0 max(0.1vh, 1px);
 }
 
 .btn-h {
@@ -113,11 +113,11 @@ nav > * {
     50% 0,
     transparent;
   border: 0 2px;
-  background-size: max(18vw, 126px)  max(50vh, 350px);
+  background-size: max(18vw, 200px)  max(50vh, 350px);
 }
 
 .apple-icon-radius {
-  border-radius: 4px 0 0 4px;
+  border-radius: max(0.6vh, 4px) 0 0 max(0.6vh, 4px);
 }
 
 .apple-icon {
@@ -141,21 +141,24 @@ nav > * {
 .search-icon {
   box-sizing: border-box;
   width: auto;
-  border-radius: 0 4px 4px 0;
+  border-radius: 0 max(0.6vh, 4px) max(0.6vh, 4px) 0;
 }
 
 .search-icon div {
-  margin-top: 2vh;
-  margin-right: 5px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: max(0.8vh, 5px);
   width: 100%;
 }
 
 .fa-search {
-  font-size: 2vh;
+  height: max(2vh, 14px);
+  font-size: max(2vh, 14px);
   color: var(--white-color);
   align-self: center;
-  padding-left: 15px;
-  margin-right: -18px;
+  padding-left: max(2vh, 14px);
+  margin-right: min(-3vh, -21px);
   z-index: 2;
 }
 
@@ -163,11 +166,12 @@ input {
   align-self: center;
   border: solid #555 1px;
   border-radius: 15px;
-  padding-left: 18px;
+  padding-left: max(3vh, 18px);
   background-color: var(--white-color);
   opacity: 0.1;
   width: auto;
-  height: 2vh;
+  height: max(4vh, 28px);
+  font-size: max(2vh, 14px);
 }
 
 input:not(:focus) {
