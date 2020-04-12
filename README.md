@@ -23,7 +23,7 @@ This work is a fourth project of Microverse
 - Github: [@ozovalihasan](https://github.com/ozovalihasan)
 - Twitter: [@ozovalihasan](https://twitter.com/ozovalihasan)
 - Linkedin: [Hasan Özovalı](https://www.linkedin.com/in/hasan-ozovali/)
-
+- Mail: [ozovalihasan@gmail.com](ozovalihasan@gmail.com)
 
 
 ## 🤝 Contributing
